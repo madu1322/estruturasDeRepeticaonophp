@@ -1,0 +1,14 @@
+modules = ["php-8.4"]
+[agent]
+expertMode = true
+
+[workflows]
+
+[[workflows.workflow]]
+name = "executar"
+mode = "sequential"
+author = 54533602
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "php index.php"
